@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+
+risk_counts = df["Risk_Level"].value_counts()
+
+risk_counts.plot(kind="bar")
+
+plt.title("Transaction Risk Distribution")
+plt.xlabel("Risk Category")
+plt.ylabel("Number of Transactions")
+plt.xticks(rotation=0)
+
+plt.tight_layout()
+plt.show()
